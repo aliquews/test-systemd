@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple echo python script
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env python test.py
+WorkingDirectory=/etc/test/
+
+[Install]
+WantedBy=multi-user.target
